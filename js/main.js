@@ -1,27 +1,28 @@
-
-
-function ocultarMenu(){
+function menu(){
 
 
     if(window.innerWidth >=  992){
     	document.getElementById("menu").style.display='inline-block';
 	}else{
-		
-		if(document.getElementById("menu").style.display=='none'){
+		document.getElementById("menu").style.display='none';
+	}
+}
+
+function ocultarMenu(){
+   	if(document.getElementById("menu").style.display=='none'){
 
 		document.getElementById("menu").style.display='inline-block';
 
-
-		}else{
+	}else{
 
 		document.getElementById("menu").style.display='none';
 
-		}
 	}
-    
-
 
 }
+
+
+
 
 
 
