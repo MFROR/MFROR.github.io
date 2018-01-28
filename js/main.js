@@ -1,14 +1,9 @@
 
 
 function ocultarMenu(){
-	var w = window,
-    d = document,
-    e = d.documentElement,
-    g = d.getElementsByTagName('body')[0],
-    x = w.innerWidth || e.clientWidth || g.clientWidth,
-    y = w.innerHeight|| e.clientHeight|| g.clientHeight;
 
-    if(w.innerWidth >=  992){
+
+    if(window.innerWidth >=  992){
     	document.getElementById("menu").style.display='inline-block';
 	}else{
 		
@@ -37,7 +32,7 @@ function videoSelect(name){
 function videoLoad(){
 	var url = window.location.search;
 	var name = url.replace("?","");
-	var teste = "queijo";
+
 
 	for(var i = 0; i < url.length; i++){
 		name = name.replace("%20"," ")
