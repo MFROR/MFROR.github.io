@@ -68,10 +68,38 @@ body, html{
 
 }
 
+#menu-form{
+	width: 100%;
+	margin: -20px 0 10px 0;
+	padding: 15px 25px;
+
+	background-color:#000;
+
+}
+#menu-form .form-control{
+
+	background-color: #fff;
+	border:none;
+	border-radius: 360px 0 0 360px;
+	-moz-border-radius:  0 360px  360px 0;
+}
+
 .btn-search{
 	border:none;
 	background-color: transparent;
 	margin-top:-1px;
+}
+
+.btn-menu-search{
+
+	padding: 0 7px;
+	background-color: #fff;
+	font-size:5px;
+
+	border:none;
+	border-radius:  0 360px  360px 0;
+	-moz-border-radius:  0 360px  360px 0;
+	
 }
 
 .glyphicon-search {
@@ -114,10 +142,7 @@ app-drawer{
 }
 
 
-#menu-form{
-	width: 100%;
 
-}
 #menu-search-button{
 	padding:0;
 }
@@ -355,7 +380,7 @@ footer{
 		width: 100%;
 	}
 	#menu-form{
-		display: block;
+		display: flex;
 	}
 
 	.itens-menu a{
